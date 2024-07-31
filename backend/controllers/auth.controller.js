@@ -11,7 +11,7 @@ export const signup = async(req, res) => {
 
         const user = await User.findOne({username})
         if (user){
-            return res.status(400).json({error:"Username exits"})
+            return res.status(409).json({error:"Username exits"})
         }
 
         //HASH PASSWORD HERE

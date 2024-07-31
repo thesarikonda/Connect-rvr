@@ -8,7 +8,9 @@ import userRoutes from "./routes/user.routes.js"
 
 import connectToMangoDB from "./db/connectToMangoDB.js";
 
+
 const app = express();
+
 const PORT = process.env.PORT || 5000;
 
 
